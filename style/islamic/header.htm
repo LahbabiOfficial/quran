@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{lang}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{description}">
+	<meta name="keywords" content="{keywords}">
+	<meta name="author" content="Nwahy.com">
+	<meta name="generator" content="Quran For All version 2">
+	
+    <title>{title}</title>
+
+    <link href="{style}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{style}/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{style}/favicon.ico">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+	<script>
+	function changesound(ID) {
+	var sound_id = document.getElementById("sound");
+	sound_id.innerHTML = '<audio controls autoplay><source src="'+ID+'" type="audio/mpeg">Your browser does not support the audio element.</audio><p><a href="'+ID+'">download</a></p>';
+	}
+	</script>
+  
+	<script type="text/javascript">
+	var GB_ROOT_DIR = "js/greybox/";
+	</script>
+	<script type="text/javascript" src="js/greybox/AJS.js"></script>
+	<script type="text/javascript" src="js/greybox/AJS_fx.js"></script>
+	<script type="text/javascript" src="js/greybox/gb_scripts.js"></script>
+
+	<script type="text/javascript" src="js/quran.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	function changeurl(id){ location=id; }
+	</script>
+	
+	{js}
+  </head>
+  
+<body>
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"><div class="header_logo"><a href="index.php"><img id="site-logo" alt="LANG[title]" src="{style}/css/images/logo.png" /></a></div></div>
+			<div class="col-md-8 ads_hidden"><div class="header_ads"><div class="thumbnail" style="background:none; border:none;"><a target="_blank" href="http://www.muslim-library.com"><img alt="Muslim Library" src="images/muslim-library.gif" /></a></div></div></div>
+		</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			{nav}
+		</div>
+	</div>
+</nav>
+	
+<div class="container well">
+{bodycode}

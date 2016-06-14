@@ -1,0 +1,337 @@
+ @font-face { font-family: "me_quran"; src: local("me_quran"), url("../fonts/me_quran.ttf"); }
+@font-face { font-family: 'KFGQPC_Naskh'; src: url('../fonts/KFC_naskh.eot'); src: local('KFGQPC Uthman Taha Naskh'), url('../fonts/KFC_naskh.otf') format('opentype'); }
+ body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background:url(images/bg.png) repeat top left #ffffff;
+}
+a { color:#2e1308; }
+a:hover { color:#af857e; }
+
+.row { margin-right: -5px; margin-left: -5px; }
+.container { background-color: #ffffff; }
+.well {	margin-top: 20px; } /* padding:5px; background:none; border:none; */
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.breadcrumb { background-color:#f0ad4e; padding: 8px 15px; margin-bottom: 10px; margin-right:5px; margin-left:5px; }
+.breadcrumb > li + li:before {  color: #666; }
+.breadcrumb > .active {  color: #666; }
+.breadcrumb li a span, .breadcrumb li a { color: #fff; }
+
+header { background:#fff url(images/header-bg.jpg) center center; }
+header .container { background:none; }
+header .container { background:none; }
+.header_logo { margin:10px 0 10px; }
+.header_ads{ margin:30px 0 10px; text-align:center; }
+
+nav .container { background:none; }
+.navbar { background-color:#2e1308; border:none; border-radius:0px; border-bottom:5px solid #af857e; }
+.navbar-default .navbar-nav > li > a { color: #f2f2f2; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { color: #fff; }
+.navbar-default .navbar-nav > li:hover { background-color:#af857e; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #af857e;
+}
+
+footer { margin-top:15px; padding:10px; color:#333; background:#7e471e url(images/footer-bg.jpg) repeat 0px 0px; }
+footer a { color:#af857e; }
+.powered { text-align:center; margin:10px 0 0 0; color:#fff; }
+
+.panel { margin-bottom: 10px; border:none; border-radius:0; border-bottom:1px solid #2e1308; }
+.panel-body { padding: 10px; }
+.panel-default .panel-heading { color:#fff; padding: 10px; background:#2e1308 url(images/main-bg.png) repeat; border-bottom:5px solid #af857e; border-radius:0px;  }
+.panel-body ul { padding-left: 25px; }
+
+.block { border: 1px solid #ddd; background-color:#ffffff; margin-bottom:10px; }
+
+.navbar-collapse { padding-left: 0px; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#2e1308; } /*ff8a00, 64ad15, 1eaade*/
+
+.rewaya { padding-bottom:10px; margin-bottom:0px; margin-top:5px; color:#64ad15; }
+.reciters { margin-bottom:0px; }
+.recitersbyrewaya { padding:10px; color:#64ad15; }
+
+div.spacer { padding:5px; margin: 0; background-color: #ffffff; border-bottom:1px dotted #666; margin-bottom:10px; }
+div:hover.spacer { background-color: #eee; border-bottom:1px dotted #333; }
+
+audio { width:100%; }
+#sound { text-align:center; }
+
+span.ayat, div.ayat4tafseer, div.ayat4tafseer_text { font-family: KFGQPC_Naskh,'traditional arabic',tahoma; /* me_quran*/ font-size: 25px; line-height:45px; }
+#translateindex { font: normal 25px KFGQPC_Naskh,'traditional arabic',tahoma; line-height:23px; }
+
+/* Start View All Sorah */
+span.ayat { color:#333; padding: 0; }
+span:hover.ayat { color:#425406; }
+span:active.ayat { color:#425406; }
+img.ayatnumber {  margin:0 5px 0 5px; }
+/* End View All Sorah */
+
+/* Start tafseer.php */
+div.tafseer { padding: 5px; margin: 0; color:#333; line-height:28px; text-align:justify; }
+div.tafseer img { padding: 0; margin: 0; border:none; }
+div.ayat4tafseer { padding: 15px; margin: 0 5px 25px 5px; border: 1px solid #cccccc; background-color:#fff; }
+div.ayat4tafseer span.number { font-size: 12px; color:#A3B926; }
+div.ayat4tafseer span.author { font-size: 12px; }
+div.ayat4tafseer img { position:relative; top:1px; }
+div.ayat4tafseer_text { padding: 15px; margin: 0 5px 25px 5px; border: 1px solid #cccccc; background-color:#fff; }
+div.ayat4tafseersearch { padding: 10px; margin: 0 5px 25px 5px; background-color:#f2f2f2; border: 1px solid #cccccc; text-align:center; }
+
+div.saveoption { padding: 20px 0 0 0; margin: 0; text-align:center; color:#D80409; }
+div.saveoption img { border:none; }
+.tafsserpages { text-align:center; padding:0px 0 0px 0; font-size:25px; }
+.tafsserpages span { color:red; }
+
+.changesoraform { margin: 0 0 10px 0; padding: 10px; text-align:center; background-color:#f2f2f2; border: 1px solid #cccccc; }
+.changesoraform select, input { padding:5px; }
+.changesoraform select.se {  }
+.changesoraform select.se2 {  }
+.changesoraform input.ser { border: 1px solid #ccc;	background-color:#fff; }
+.changesoraform p { text-align:center; padding: 0 0 10px 0; margin: 0; color:#D80409; }
+/* End tafseer.php */
+
+/* Start translate.php */
+#translateindex { padding: 0; margin: 0; }
+#translateindex h1 { font: normal 18px arial,tahoma; padding: 5px 0 10px 0; margin: 0; color: #333; text-align:center; direction: ltr; }
+#translateindex div.englishtext { font: normal 15px arial,tahoma; padding: 5px 0 10px 0; margin: 0; color: #CC0000; text-align:center; direction: ltr; }
+#translateindex div.translate { padding: 0; margin: 10px 0 10px 0; font: normal 15px arial,tahoma; text-align:left; line-height:22px; direction: ltr; }
+#translateindex div.translate_rtl { padding: 0; margin: 10px 3px 10px 0; font: normal 13px tahoma; line-height:22px; }
+#translateindex .ayat, #translateindex .ayat2, #translateindex div.translate_rtl { direction: rtl; text-align:right; }
+#translateindex .ayat { padding: 10px; margin-bottom: 10px; background-color:#fff; border: 1px solid #cccccc; line-height:45px; }
+#translateindex .ayat2 { padding: 10px; margin-bottom: 10px; background-color:#f2f2f2; border: 1px solid #cccccc; line-height:45px; }
+#translateindex span { font-size: 12px; color: #CC0000; }
+#translateindex img { margin:3px; border:none; position:relative; top:0px; }
+
+div.pdfquran { padding: 10px; margin: 0 0 25px 0; border: 1px solid #cccccc; background-color:#F7F7F7; text-align:center; }
+div.pdfquran img { border: none; margin: 0 0 10px 0; }
+/* End translate.php */
+
+div.listensora { margin: 0 0 10px 0; padding: 10px; text-align:center; background-color: #f2f2f2; border: 1px solid #cccccc; }
+div.listensora_window { margin: 0 0 10px 0; padding: 0; text-align:center; }
+div.listensora select { padding: 5px; }
+div.listensora .ser { padding: 5px; border: 1px solid #ccc;	background-color:#fff; }
+div.mp3plyer { width:100%; padding-top:10px; margin: 0; text-align:center; color:#333; }
+
+.selectbox_sound { margin:0; text-align:center; }
+.selectbox_sound select.se { margin-top: 10px; }
+
+/* Start Select Language */
+.sorabox_en { color: #af857e; direction: ltr; text-align:center; }
+.sorabox_en select { width:100%; padding:7px; cursor: pointer; margin-top:5px; direction: ltr; }
+/* End Select Language */
+
+/* Start Menu Sorah ar */
+div.soraoverflow { margin: 0; width: 100%; background-color:#f2f2f2; padding: 0; height:242px; overflow:auto; }
+div.soraoverflow div.links4sora { margin: 5px; padding: 0; height:25px; }
+div.soraoverflow div a{	color:#2e1308; display:block; }
+/* End Menu Sorah ar */
+
+/* Start Menu Sorah en */
+div.soraoverflow_en { margin: 0 auto; width: 100%; background-color:#f2f2f2; padding: 0; height:242px; overflow:auto; direction: ltr; }
+div.soraoverflow_en div.links4sora { margin: 5px; padding: 0; text-align:left; }
+div.soraoverflow_en div a{ color:#2e2e2e; display:block; }
+/* End Menu Sorah en */
+
+
+#GB_overlay { background-color: #000; position: absolute; margin: auto; top: 0; left: 0; z-index: 100; }
+#GB_window { left: 0; top: 0; font-size: 1px; position: absolute; overflow: visible; z-index: 150; }
+#GB_window .content { width: auto; margin: 0; padding: 0; }
+#GB_frame { border: 0; margin: 0; padding: 0; overflow: auto; white-space: nowrap; }
+.GB_Gallery { margin: 0 22px 0 22px; }
+.GB_Gallery .content { background-color: #fff; border: 3px solid #ddd; }
+.GB_header { top: 10px; left: 0; margin: 0; z-index: 500; position: absolute; border-bottom: 2px solid #555; border-top: 2px solid #555; }
+.GB_header .inner { background-color: #333; font-family: Arial, Verdana, sans-serif; padding: 2px 20px 2px 20px; }
+.GB_header table { margin: 0; width: 100%; border-collapse: collapse; }
+.GB_header .caption { text-align: left; color: #eee; white-space: nowrap; font-size: 20px; }
+.GB_header .close { text-align: right; }
+.GB_header .close img { z-index: 500; cursor: pointer; }
+.GB_header .middle { white-space: nowrap; text-align: center; }
+#GB_middle { color: #eee; }
+#GB_middle img { cursor: pointer; vertical-align: middle; }
+#GB_middle .disabled { cursor: default; }
+#GB_middle .left { padding-right: 10px; }
+#GB_middle .right { padding-left: 10px; }
+.GB_Window .content { background-color: #fff; border: 3px solid #ccc; border-top: none; }
+.GB_Window .header { border-bottom: 1px solid #aaa; border-top: 1px solid #999; border-left: 3px solid #ccc; border-right: 3px solid #ccc; margin: 0; height: 22px; font-size: 12px; padding: 3px 0; color: #333; }
+.GB_Window .caption { font-size: 12px; text-align: left; white-space: nowrap; padding-right: 20px; }
+.GB_Window .close { text-align: right; }
+.GB_Window .close span { font-size: 12px; cursor: pointer; }
+.GB_Window .close img { cursor: pointer; padding: 0 3px 0 0; }
+.GB_Window .on { border-bottom: 1px solid #333; }
+.GB_Window .click { border-bottom: 1px solid red; }
+
+/* Start pages html */
+div.htmlpage { line-height:22px; padding:5px; }
+div.htmlpage ul { margin: 0; padding: 10px;	}
+div.htmlpage ul li { color:#CC0000;	}
+/* End Pages html */
+
+/* Start xml create file */
+.xmlcreate { padding: 10px; margin: 0; text-align:center; line-height:20px; }
+.xmlcreate h2 { font:bold 20px arial,tahoma; margin: 0 0 10px 0; }
+.xmlcreate input.input1 { width:300px; border: 1px solid #cccccc; background-color:#F7F7F7; direction:ltr; }
+.xmlcreate input.input2 { border: 1px solid #cccccc; background-color:#F7F7F7; }
+.xmlcreate select { border: 1px solid #cccccc; background-color:#F7F7F7; }
+div.alert { padding: 10px; text-align:center; }
+/* End xml create file */
+
+/* Start Loop */
+.books_ar { margin: 0; padding: 0; }
+.books { margin: 0; padding: 0; direction: ltr; }
+.books ul, .books_ar ul { margin: 0 0 0 0; padding:0 0 0 0; }
+.books ul li, .books_ar ul li { color: #333; list-style-type: none; padding: 0 0 15px 0; margin:0 0 0 0; list-style-type: none; }
+.booksborder { border-bottom:1px dotted #ccc; padding: 15px 0 0 0; }
+.books a.bookstitle, .books_ar a.bookstitle { color: #2e1308; font-weight:bold; }
+.books p, .books_ar p { padding:0; }
+.books h3, .books_ar h3 { padding:0 0 10px 0; }
+.books p span, .books_ar p span { color: #2e1308; }
+.description { color:#333; display: block; }
+.downloadicons { padding:0; padding-bottom:15px; }
+.downloadicons img { border:none; margin-right:3px; margin-left:3px; }
+
+.books_ar_sidebar { margin: 0; padding: 0; direction: rtl; text-align:right; }
+.books_sidebar { margin: 0; padding: 0; direction: ltr; text-align:left; }
+.books_sidebar ul, .books_ar_sidebar ul {  }
+
+.books_sidebar ul li a {padding: 0 0 0 0; color:#2e1308; text-decoration: none; }
+.books_ar_sidebar ul li a {padding: 0 0 0 0; color:#2e1308; text-decoration: none; }
+
+.books_sidebar ul li a:hover, .books_ar_sidebar ul li a:hover { color:#2e1308; }
+
+.books_sidebar ul li, .books_ar_sidebar ul li { color: #333; padding: 5px 0 5px 0; background: none; }
+.books_sidebar ul li:hover, .books_ar_sidebar ul li:hover { background: none; }
+/* End Loop */
+
+/* post Share */
+.post_share { text-align:center; overflow: hidden; margin-top: 5px;  margin-bottom: 10px; }
+.post_share img, .post_share a img{ margin-bottom: 5px; }
+
+.post_share span {
+	border: 1px solid #e4e4e4;
+	background: #efefef;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#efefef));
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #efefef);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #efefef);
+	background-image: -ms-linear-gradient(top, #f8f8f8, #efefef);
+	background-image: -o-linear-gradient(top, #f8f8f8, #efefef);
+	background-image: linear-gradient(top, #f8f8f8, #efefef);
+	box-shadow: 0 1px #fff inset;
+	-moz-box-shadow: 0 1px #fff inset;
+	-webkit-box-shadow: 0 1px #fff inset;
+	position: relative;
+	margin-right: 5px;
+	float: left;
+}
+.post_share span a { color: #333; font-size: 12px; display: block; padding: 4px 5px 0 35px; }
+.post_share span i { width: 29px; position: absolute; height: 27px; opacity: 0.8; left: 2px; }
+.post_share span:hover i { opacity: 1; }
+.post_share span i.fb-share { background: url(icons/share/fb-share.png) no-repeat left; }
+.post_share span i.twitter-share { background: url(icons/share/twitter-share.png) no-repeat left; }
+.post_share span i.google-share { background: url(icons/share/google-share.png) no-repeat left; }
+.post_share span i.pin-share { background: url(icons/share/pin-share.png) no-repeat left; }
+.post_share span i.reddit-share { background: url(icons/share/reddit-share.png) no-repeat left; }
+.post_share span i.stumble-share { background: url(icons/share/stumble-share.png) no-repeat left; }
+.post_share span i.linkedin-share { background: url(icons/share/linkedin-share.png) no-repeat left; }
+.post_share span i.slashdot-share { background: url(icons/share/slashdot-share.png) no-repeat left; }
+.post_share span i.tumblr-share { background: url(icons/share/tumblr-share.png) no-repeat left; }
+.post_share span i.googleb-share { background: url(icons/share/googleb-share.png) no-repeat left; }
+.post_share span i.newsvine-share { background: url(icons/share/newsvine-share.png) no-repeat left; }
+.post_share span i.evernote-share { background: url(icons/share/evernote-share.png) no-repeat left; }
+.post_share span i.email-share { background: url(icons/share/email-share.png) no-repeat left; }
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) and (max-width: 1200px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* rules for iPad in landscape orientation */
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+#page-wrapper { margin:0px auto; }
+#logo-bar-wrapper { padding:5px 0 5px 0; background:#ffffff; height:auto; }
+#logo {	float:none; margin:0; text-align:center; width:100%; height:auto; }
+#logo img {	margin:10px 0 0 0; width:150px; height:120px; }
+
+.ads { float:none; margin:10px 0 0 0; width:100%; padding:5px; text-align:center; }
+.ads img {margin:0; width:100%; max-width:468px; }
+
+.post_thumb { float: none; margin-left: 0px; margin-bottom: 10px; width:100%; text-align:center; }
+.post_thumb img { width:250px; }
+.post_thumb a, .post_thumb a img { display: inline; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+.panel-body img { max-width:100%; }
+.ads ul li { float:none; width:100%; margin:0px; padding:10px; text-align:center; }
+
+body { background:url(images/bg.png) repeat top left #ffffff scroll !important; }
+#page-wrapper { margin:0px auto; }
+#logo-bar-wrapper { padding:5px 0 5px 0; background:#ffffff; height:auto; }
+#logo {	float:none; margin:0; text-align:center; width:100%; height:auto; }
+#logo img {	margin:10px 0 0 0; width:150px; height:120px; }
+
+.ads { float:none; margin:10px 0 0 0; width:100%; padding:5px }
+.ads img {margin:0; width:100%; }
+
+.post_thumb { float: none; margin-left: 0px; margin-bottom: 10px; width:100%; text-align:center; }
+.post_thumb img { width:250px; }
+.post_thumb a, .post_thumb a img { display: inline; }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+.panel-body img { max-width:100%; }
+
+.ads ul li { float:none; width:100%; margin:0px; padding:10px; text-align:center; }
+
+body { background:url(images/bg.png) repeat top left #ffffff scroll !important; }
+#page-wrapper { margin:0px auto; }
+#logo-bar-wrapper { padding:5px 0 5px 0; background:#ffffff; height:auto; }
+#logo {	float:none; margin:0; text-align:center; width:100%; height:auto; }
+#logo img {	margin:10px 0 0 0; width:150px; height:120px; }
+
+.ads { float:none; margin:10px 0 0 0; width:100%; padding:5px }
+.ads img {margin:0; width:100%; }
+
+.post_thumb { float: none; margin-left: 0px; margin-bottom: 10px; width:100%; }
+}
+
+@media only screen and (max-width: 240px) {
+.panel-body img { max-width:100%; }
+
+.ads ul li { float:none; width:100%; margin:0px; padding:10px; text-align:center; }
+
+body { background:url(images/bg.png) repeat top left #ffffff scroll !important; }
+#page-wrapper { margin:0px auto; }
+#logo-bar-wrapper { padding:5px 0 5px 0; background:#ffffff; height:auto; }
+#logo {	float:none; margin:0; text-align:center; width:100%; height:auto; }
+#logo img {	margin:10px 0 0 0; width:150px; height:120px; }
+
+.ads { float:none; margin:10px 0 0 0; width:100%; padding:5px }
+.ads img {margin:0; width:100%; }
+
+.post_thumb { float: none; margin-left: 0px; margin-bottom: 10px; width:100%; }
+}
+}

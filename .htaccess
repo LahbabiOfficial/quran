@@ -1,0 +1,32 @@
+RewriteEngine on
+
+RewriteRule index\.html$ index.php
+RewriteRule sora-(.*)\.html$ index.php?sora=$1&l=ar
+RewriteRule view-(.*),from-(.*),to-(.*)\.html$ index.php?sora=$1&f=$2&t=$3
+RewriteRule reader-(.*)-(.*)\.html$ index.php?sora=$1&x=$2
+
+RewriteRule language-(.*)\.html$ translate.php?l=$1
+RewriteRule translate-(.*)-(.*)\.html$ translate.php?l=$1&sora=$2
+RewriteRule s-(.*)-(.*)-(.*)\.html$ translate.php?l=$1&sora=$2&x=$3
+
+RewriteRule listen-(.*)-(.*)-(.*)\.html$ listen.php?sora=$1&aya=$2&l=$3
+RewriteRule tafseer-(.*)-(.*)\.html$ tafseer.php?type=$1&sora=$2
+RewriteRule tafseer-(.*)\.html$ tafseer.php?type=$1
+RewriteRule t-(.*)-(.*)-(.*)\.html$ tafseer.php?sora=$1&type=$2&aya=$3
+RewriteRule location\.html$ index.php?tafseet=1
+RewriteRule reader\.html$ index.php?reader=1
+
+RewriteRule word-(.*)-(.*)-(.*)\.html$ save.php?sora=$1&type=$2&aya=$3&save_type=word
+RewriteRule notepad-(.*)-(.*)-(.*)\.html$ save.php?sora=$1&type=$2&aya=$3&save_type=notepad
+RewriteRule html-(.*)-(.*)-(.*)\.html$ save.php?sora=$1&type=$2&aya=$3&save_type=html
+RewriteRule copy-(.*)-(.*)-(.*)\.html$ save.php?sora=$1&type=$2&aya=$3&save_type=print
+
+RewriteRule language\.html$ language.php
+RewriteRule books-(.*)\.html$ book.php?l=$1
+RewriteRule book-details-(.*)-(.*)\.html$ book.php?id=$1&l=$2
+
+ErrorDocument 400 http://www.nwahy.com/quran/index.php
+ErrorDocument 401 http://www.nwahy.com/quran/index.php
+ErrorDocument 403 http://www.nwahy.com/quran/index.php
+ErrorDocument 404 http://www.nwahy.com/quran/index.php
+ErrorDocument 500 http://www.nwahy.com/quran/index.php
